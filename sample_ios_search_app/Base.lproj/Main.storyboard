@@ -27,7 +27,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="Xsk-af-efT">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="Xsk-af-efT" customClass="ItemTableViewCell" customModule="sample_ios_search_app" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="84" width="320" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xsk-af-efT" id="rGD-Vx-XQY">
@@ -71,6 +71,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="itemImageView" destination="cAl-Qz-Jcf" id="8Gc-Lr-TRx"/>
+                                    <outlet property="itemPriceLabel" destination="19K-uG-WNh" id="aI1-UD-Y1n"/>
+                                    <outlet property="itemTitleLabel" destination="MXK-8w-HIt" id="dTY-by-Sj8"/>
                                     <segue destination="w5S-hj-R3g" kind="show" id="ed7-hm-cbw"/>
                                 </connections>
                             </tableViewCell>
@@ -115,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2L-03-hGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2211" y="159"/>
+            <point key="canvasLocation" x="2211" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZN7-1r-TxS">
