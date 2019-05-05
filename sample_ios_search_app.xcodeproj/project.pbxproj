@@ -14,6 +14,8 @@
 		55180847227F34D50064954E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55180845227F34D50064954E /* LaunchScreen.storyboard */; };
 		5518084F227F3D860064954E /* ItemSearchResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5518084E227F3D860064954E /* ItemSearchResultSet.swift */; };
 		55180851227F444B0064954E /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55180850227F444B0064954E /* ItemTableViewCell.swift */; };
+		55180855227F5BD50064954E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55180854227F5BD50064954E /* WebViewController.swift */; };
+		55180857227F5E5F0064954E /* SearchItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55180856227F5E5F0064954E /* SearchItemTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		55180848227F34D50064954E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5518084E227F3D860064954E /* ItemSearchResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchResultSet.swift; sourceTree = "<group>"; };
 		55180850227F444B0064954E /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		55180854227F5BD50064954E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		55180856227F5E5F0064954E /* SearchItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				5518083E227F34D40064954E /* ViewController.swift */,
 				5518084E227F3D860064954E /* ItemSearchResultSet.swift */,
 				55180850227F444B0064954E /* ItemTableViewCell.swift */,
+				55180856227F5E5F0064954E /* SearchItemTableViewController.swift */,
+				55180854227F5BD50064954E /* WebViewController.swift */,
 				55180840227F34D40064954E /* Main.storyboard */,
 				55180843227F34D50064954E /* Assets.xcassets */,
 				55180845227F34D50064954E /* LaunchScreen.storyboard */,
@@ -142,8 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				55180851227F444B0064954E /* ItemTableViewCell.swift in Sources */,
+				55180855227F5BD50064954E /* WebViewController.swift in Sources */,
 				5518083F227F34D40064954E /* ViewController.swift in Sources */,
 				5518084F227F3D860064954E /* ItemSearchResultSet.swift in Sources */,
+				55180857227F5E5F0064954E /* SearchItemTableViewController.swift in Sources */,
 				5518083D227F34D40064954E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

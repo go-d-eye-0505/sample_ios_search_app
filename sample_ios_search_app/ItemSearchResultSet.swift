@@ -2,25 +2,22 @@ import Foundation
 
 class ItemSearchResultSet: Codable {
     var resultSet: ResultSet
-
     private enum CodingKeys: String, CodingKey {
         case resultSet = "ResultSet"
     }
 }
 
 class ResultSet: Codable {
-    var result: Result
-
+    var firstObject: FirstObject
     private enum CodingKeys: String, CodingKey {
-        case result = "Result"
+        case firstObject = "0"
     }
 }
 
 class FirstObject: Codable {
-    var firstObject: FirstObject
-
+    var result: Result
     private enum CodingKeys: String, CodingKey {
-        case firstObject = "0"
+        case result = "Result"
     }
 }
 
@@ -68,6 +65,8 @@ class Result: Codable {
 class ItemData: Codable {
     var name: String = ""
     var url: String = ""
+    var imageInfo: ImageInfo = ImageInfo()
+    var priceInfo: PriceInfo = PriceInfo()
 
     class ImageInfo: Codable {
         var medium: String?
@@ -77,8 +76,6 @@ class ItemData: Codable {
         }
     }
 
-    var imageInfo: ImageInfo = ImageInfo()
-
     class PriceInfo: Codable {
         var price: String?
 
@@ -86,8 +83,6 @@ class ItemData: Codable {
             case price = "_value"
         }
     }
-
-    var priceInfo: PriceInfo = PriceInfo()
 
     private enum CodingKeys: String, CodingKey {
         case name = "Name"

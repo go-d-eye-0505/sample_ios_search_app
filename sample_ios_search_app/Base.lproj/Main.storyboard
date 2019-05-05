@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Search Item Table View Controller-->
         <scene sceneID="Xzo-bI-Hmw">
             <objects>
-                <tableViewController id="zCb-96-euD" sceneMemberID="viewController">
+                <tableViewController id="zCb-96-euD" customClass="SearchItemTableViewController" customModule="sample_ios_search_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hcf-rd-tam">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="1348.125" y="134.1549295774648"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="0P9-2m-BU1">
             <objects>
-                <viewController id="w5S-hj-R3g" sceneMemberID="viewController">
+                <viewController id="w5S-hj-R3g" customClass="WebViewController" customModule="sample_ios_search_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f43-wd-hqC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,6 +115,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kZG-tX-qHI"/>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="F5w-cn-2gJ" id="5lE-MR-8Yx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2L-03-hGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
